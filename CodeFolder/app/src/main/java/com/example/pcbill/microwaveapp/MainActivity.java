@@ -41,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
 
         buttonGrill=(Button) findViewById(R.id.GrillButton);
 
-      /*  buttonGrill.setOnClickListener(new View.OnClickListener() {
+       buttonGrill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ****.class);
+                Intent myIntent = new Intent(v.getContext(), Grill_Activity.class);
                 startActivityForResult(myIntent, 0);
             }
         });
-        */ //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi Grill
+         //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi Grill
 
         buttonApopsiksi=(Button) findViewById(R.id.ApopsiksiButton);
 
