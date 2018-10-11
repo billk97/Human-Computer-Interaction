@@ -41,16 +41,17 @@ public class Grill_Activity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBartime, int progresValue, boolean b) {
                 timi = progresValue;
                // System.out.print("i:"+i);
-                Toast.makeText(getApplicationContext(),"changing seekbar progress",Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(),"changing seekbar progress",Toast.LENGTH_SHORT).show();
+                GrillTimeDisplay.setText("00:"+timi+"0");
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBartime) {
-                Toast.makeText(getApplicationContext(), "Started tracking seekbar", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "Started tracking seekbar", Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onStopTrackingTouch(SeekBar seekBartime) {
-                Toast.makeText(getApplicationContext(), "Stopped tracking seekbar" +timi, Toast.LENGTH_SHORT).show();
-                //to bug ap kato
+              //  Toast.makeText(getApplicationContext(), "Stopped tracking seekbar" +timi, Toast.LENGTH_SHORT).show();
+               //to bug ap kato
             }
         });
     }
