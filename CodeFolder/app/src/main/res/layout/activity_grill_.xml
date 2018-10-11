@@ -17,9 +17,10 @@
         android:text="Εναρξη"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GrillTempBar" />
+        app:layout_constraintTop_toBottomOf="@+id/GrillTempBar"
+        app:layout_constraintVertical_bias="0.101" />
 
     <SeekBar
         android:id="@+id/GrillTimeBar"
@@ -36,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GrillTimeDisplay" />
+        app:layout_constraintTop_toBottomOf="@+id/GrillTimeDisplay"
+        app:layout_constraintVertical_bias="0.049" />
 
     <TextView
         android:id="@+id/GrillTimeText"
@@ -47,11 +49,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Χρόνος"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/GrillTimeBar"
         app:layout_constraintEnd_toStartOf="@+id/GrillTimeDisplay"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Grillinformation"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <TextView
         android:id="@+id/Grillinformation"
@@ -59,8 +63,9 @@
         android:layout_height="29dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="ΑΡΧΙΚΗ>GRILL"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,47 +76,53 @@
         android:layout_width="147dp"
         android:layout_height="66dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="00:00"
+        android:textAlignment="center"
         android:textSize="44dp"
-        app:layout_constraintBottom_toTopOf="@+id/GrillTimeBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
-        app:layout_constraintStart_toEndOf="@+id/GrillTimeText"
-        app:layout_constraintTop_toBottomOf="@+id/Grillinformation"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="00:00" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
 
     <TextView
         android:id="@+id/GrillTempText"
-        android:layout_width="109dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="95dp"
-        android:layout_marginEnd="51dp"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="8dp"
         android:text="Θερμοκρασία"
-        app:layout_constraintBottom_toTopOf="@+id/GrillTempBar"
-        app:layout_constraintEnd_toStartOf="@+id/GrillTempDisplay"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GrillTimeBar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/GrillTempDisplay"
         android:layout_width="147dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:text="800"
+        android:textAlignment="center"
         android:textSize="44dp"
-        app:layout_constraintBottom_toTopOf="@+id/GrillTempBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
-        app:layout_constraintStart_toEndOf="@+id/GrillTempText"
-        app:layout_constraintTop_toBottomOf="@+id/GrillTimeBar"
-        tools:text="00:00" />
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GrillTimeDisplay"
+        app:layout_constraintVertical_bias="0.31"
+        tools:text=":" />
 
     <SeekBar
         android:id="@+id/GrillTempBar"
@@ -124,11 +135,27 @@
         android:layout_marginTop="8dp"
         android:max="10"
         android:progress="3"
-        app:layout_constraintBottom_toTopOf="@+id/GrillButtonStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GrillTempDisplay"
-        app:layout_constraintVertical_bias="0.532" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Πισω"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>

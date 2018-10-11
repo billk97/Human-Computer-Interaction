@@ -22,10 +22,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DateFormat df = new SimpleDateFormat("HH:mm");   // me afto to tropo
-        Date dateobj = new Date();                              // pairnw thn wra
-        timeText=(TextView) findViewById(R.id.timeText);        //orizw to text view gia thn wra
-        timeText.setText(String.valueOf(df.format(dateobj)));   //etsi emfanizw thn wra
+
+        //Me ayto to tropo orizw to textview ths wras kai me to thread poy ftiaxnw
+        //moy alazei h wra symfwna me to roloi tou kinhtoy
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        Thread.sleep(1000);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                timeText=(TextView) findViewById(R.id.timeText);
+                                long date = System.currentTimeMillis();
+                                SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
+                                String dateString = sdf.format(date);
+                                timeText.setText(dateString);
+                            }
+                        });
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        };
+        t.start();
+
+
+
+
+
+
+
+
 
         buttonRythmisiPsisimatos=(Button) findViewById(R.id.RythmisiPsisimatosButton);
 
