@@ -58,7 +58,7 @@ public class Grill_Activity extends AppCompatActivity {
             }
         });
         /**controling the data for the temperature  **/
-        GrillTempDisplay.setText("0000");//initializing samething for the begining
+        GrillTempDisplay.setText("0");//initializing samething for the begining
         seekBarTemp.setMax(10);//setting max temp
         seekBarTemp.setProgress(0);//setting min temp
         /**the most important part
@@ -68,7 +68,7 @@ public class Grill_Activity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean b) {
                 temp=progressValue;
-                GrillTempDisplay.setText(" "+temp+"00");
+                GrillTempDisplay.setText(" "+temp*80);
             }
 
             @Override
