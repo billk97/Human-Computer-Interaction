@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Grill_Activity"></activity>
+        <activity android:name=".Grill_Activity" />
+        <activity android:name=".MicroPrograms" />
+        <activity android:name=".SpaghettiProgramm"></activity>
     </application>
 
 </manifest>

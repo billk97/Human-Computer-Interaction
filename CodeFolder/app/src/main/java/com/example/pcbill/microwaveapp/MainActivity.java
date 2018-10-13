@@ -103,14 +103,14 @@ public class MainActivity extends AppCompatActivity {
 
         buttonEtoimaProgrammata=(Button) findViewById(R.id.EtoimaProgrammataButton);
 
-      /*  buttonEtoimaProgrammata.setOnClickListener(new View.OnClickListener() {
+        buttonEtoimaProgrammata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ****.class);
+                Intent myIntent = new Intent(v.getContext(), MicroPrograms.class);
                 startActivityForResult(myIntent, 0);
             }
         });
-        */ //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi etoima programmata
+        //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi etoima programmata
 
 
 
