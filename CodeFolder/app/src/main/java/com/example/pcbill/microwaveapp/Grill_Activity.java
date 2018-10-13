@@ -9,7 +9,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-
+//bill
 public class Grill_Activity extends AppCompatActivity {
 
     private  Button buttonBack;
