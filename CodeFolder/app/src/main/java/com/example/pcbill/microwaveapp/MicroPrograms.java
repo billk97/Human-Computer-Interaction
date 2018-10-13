@@ -35,12 +35,20 @@ public class MicroPrograms extends AppCompatActivity {
             }
         });
 
+        SpaghettiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
 
     }
 
     private void initializeVriable()
     {
-        BackButton=(Button) findViewById(R.id.buttonBack);
+        BackButton=(Button) findViewById(R.id.MicroProgramsBackButton);
         SpaghettiButton=(Button) findViewById(R.id.buttonSpagheti);
         FishButton=(Button) findViewById(R.id.buttonFish);
         RiseButton=(Button) findViewById(R.id.buttonRise);

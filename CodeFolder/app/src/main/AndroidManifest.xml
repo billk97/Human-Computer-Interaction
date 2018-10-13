@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".Grill_Activity" />
         <activity android:name=".MicroPrograms" />
-        <activity android:name=".SpaghettiProgramm"></activity>
+        <activity android:name=".SpaghettiProgram"></activity>
     </application>
 
 </manifest>

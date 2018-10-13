@@ -58,7 +58,7 @@ public class Grill_Activity extends AppCompatActivity {
     // arxikopoiiseis metabliton mazemenes
     private void initializeVriable()
     {
-        buttonBack=(Button) findViewById(R.id.BackButton);
+        buttonBack=(Button) findViewById(R.id.GrillBackButton);
         seekBartime = (SeekBar) findViewById(R.id.GrillTimeBar);
         GrillTimeDisplay=(TextView) findViewById(R.id.GrillTimeDisplay);
     }
