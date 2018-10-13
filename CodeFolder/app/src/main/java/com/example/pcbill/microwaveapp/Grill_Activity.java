@@ -15,6 +15,9 @@ public class Grill_Activity extends AppCompatActivity {
     private  Button buttonBack;
     private SeekBar seekBartime;
     private TextView GrillTimeDisplay;
+    private TextView GrillTempDisplay;
+    private SeekBar seekBarTemp;
+    private Button GrillStartButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +57,39 @@ public class Grill_Activity extends AppCompatActivity {
                //to bug ap kato
             }
         });
+        /**controling the data for the temperature  **/
+        GrillTempDisplay.setText("0000");//initializing samething for the begining
+        seekBarTemp.setMax(800);//setting max temp
+        seekBarTemp.setProgress(200);//setting min temp
+        /**the most important part
+         * initializing temp and printing on textView the result of the action on the bar**/
+        seekBarTemp.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+            int temp =0;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progressValue, boolean b) {
+                temp=progressValue;
+                GrillTempDisplay.setText(" "+temp+"");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
-    // arxikopoiiseis metabliton mazemenes
+    /**initializing the interface**/
     private void initializeVriable()
     {
         buttonBack=(Button) findViewById(R.id.GrillBackButton);
         seekBartime = (SeekBar) findViewById(R.id.GrillTimeBar);
         GrillTimeDisplay=(TextView) findViewById(R.id.GrillTimeDisplay);
+        GrillTempDisplay=(TextView)findViewById(R.id.GrillTempDisplay);
+        seekBarTemp=(SeekBar) findViewById(R.id.GrillTempBar);
+        GrillStartButton=(Button)findViewById(R.id.GrillButtonStart);
     }
 }
