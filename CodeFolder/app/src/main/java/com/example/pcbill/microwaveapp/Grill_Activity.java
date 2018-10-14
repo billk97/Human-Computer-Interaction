@@ -98,6 +98,14 @@ public class Grill_Activity extends AppCompatActivity {
 
             }
         });
+
+        GrillStartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
     /**initializing the interface**/
     private void initializeVriable()
