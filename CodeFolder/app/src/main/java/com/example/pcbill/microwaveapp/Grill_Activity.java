@@ -36,16 +36,33 @@ public class Grill_Activity extends AppCompatActivity {
         /*displaing 00:00*/
         GrillTimeDisplay.setText("00:00");
         /*to controle the seek bar*/
-        seekBartime.setMax(10);
+        seekBartime.setMax(30);
         seekBartime.setProgress(0);
         seekBartime.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int timi = 0;
+            int min=0;
+            int sec=0;
             @Override
             public void onProgressChanged(SeekBar seekBartime, int progresValue, boolean b) {
                 timi = progresValue;
-               // System.out.print("i:"+i);
-               // Toast.makeText(getApplicationContext(),"changing seekbar progress",Toast.LENGTH_SHORT).show();
-                GrillTimeDisplay.setText("00:"+timi+"0");
+                min=timi*20/60;
+                sec=timi*20%60;
+                if (sec == 0) {
+                    if(min!=10) {
+                        GrillTimeDisplay.setText("0" + min + ":" + sec + "0");
+                    }else{
+                        GrillTimeDisplay.setText(min + ":" + sec + "0");
+                    }
+                }
+                else {
+                    GrillTimeDisplay.setText("0" + min + ":" + sec);
+                }
+
+                /*if(timi*2<=6) {
+                    GrillTimeDisplay.setText("00:" + timi * 2 + "0");
+                }else{
+                    GrillTimeDisplay.setText("01:" + timi * 2 + "0");
+                }*/
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBartime) {
@@ -79,14 +96,6 @@ public class Grill_Activity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
-            }
-        });
-
-        GrillStartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
-                startActivityForResult(myIntent, 0);
             }
         });
     }
