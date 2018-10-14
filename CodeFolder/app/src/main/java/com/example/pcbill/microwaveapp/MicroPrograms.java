@@ -38,7 +38,78 @@ public class MicroPrograms extends AppCompatActivity {
         SpaghettiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String textToPass="ΖΥΜΑΡΙΚΑ";
                 Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        FishButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΨΑΡΙ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+       RiseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΡΥΖΙ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        ChickenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΚΟΤΟΠΟΥΛΟ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        VegetableButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΛΑΧΑΝΙΚΑ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        PotatoeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΠΑΤΑΤΕΣ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        MeatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΚΡΕΑΣ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+        LiquidButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textToPass="ΥΓΡΑ";
+                Intent myIntent = new Intent(v.getContext(), SpaghettiProgram.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, textToPass);
                 startActivityForResult(myIntent, 0);
             }
         });

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SpaghettiProgram extends AppCompatActivity {
 
@@ -14,14 +15,19 @@ public class SpaghettiProgram extends AppCompatActivity {
     Button ThirdChoiceSpaButton;
     Button FourthChoiceSpaButton;
     Button StartSpaButton;
+    TextView info;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spaghetti_programm);
-
         initializeVriable();
+
+        Intent intent = getIntent();
+        String text = intent.getStringExtra(Intent.EXTRA_TEXT);
+        info.setText("ΑΡΧΙΚΗ>ΕΤΟΙΜΑ ΠΡΟΓΡΑΜΜΑΤΑ>"+text);
+
         BackSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +46,8 @@ public class SpaghettiProgram extends AppCompatActivity {
         ThirdChoiceSpaButton=(Button) findViewById(R.id.buttonThirdChoiceSpa);
         FourthChoiceSpaButton=(Button) findViewById(R.id.buttonFourthChoiceSpa);
         StartSpaButton=(Button) findViewById(R.id.buttonStartSpa);
+        info=(TextView) findViewById(R.id.informationSpaghetti);
+
 
     }
 }

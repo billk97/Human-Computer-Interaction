@@ -83,8 +83,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPotatoe"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonChicken"
+        app:layout_constraintVertical_bias="0.678" />
 
     <Button
         android:id="@+id/buttonPotatoe"
@@ -95,12 +95,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="ΠΑΤΑΤΕΣ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLiquid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
-        app:layout_constraintStart_toEndOf="@+id/buttonVegetables"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonChicken"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.515" />
 
     <Button
         android:id="@+id/buttonChicken"
