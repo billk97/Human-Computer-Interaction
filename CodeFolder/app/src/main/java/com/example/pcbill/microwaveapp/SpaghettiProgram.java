@@ -35,6 +35,14 @@ public class SpaghettiProgram extends AppCompatActivity {
                 startActivityForResult(myIntent, 0);
             }
         });
+
+        StartSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 
 
