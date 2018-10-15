@@ -33,6 +33,14 @@ public class regulate_cook extends AppCompatActivity {
                 startActivityForResult(myIntent, 0);
             }
         });
+        /*start button s fuction */
+        RegulateStartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
 
         /*display time*/
         RegulateTimeDisplay.setText("00:00");
