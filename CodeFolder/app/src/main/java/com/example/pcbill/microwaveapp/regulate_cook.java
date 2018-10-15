@@ -16,6 +16,9 @@ public class regulate_cook extends AppCompatActivity {
     private TextView RegulateTempDisplay;
     private SeekBar RegulateTimeBar;
     private SeekBar RegulateTempBar;
+    int timi = 0;
+    int min = 0;
+    int sec = 0;
 
 
 
@@ -38,6 +41,7 @@ public class regulate_cook extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
                 startActivityForResult(myIntent, 0);
             }
         });
@@ -48,35 +52,28 @@ public class regulate_cook extends AppCompatActivity {
         RegulateTimeBar.setMax(30);
         RegulateTimeBar.setProgress(0);
         RegulateTimeBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int timi = 0;
-            int min = 0;
-            int sec = 0;
+
 
             @Override
             public void onProgressChanged(SeekBar RegulateTimeBar, int progresValue, boolean b) {
                 timi = progresValue;
                 min = timi * 20 / 60;
                 sec = timi * 20 % 60;
-                if (sec == 0) {
-                    if (min != 10) {
-                        RegulateTimeDisplay.setText("0" + min + ":" + sec + "0");
-                    } else {
-                        RegulateTimeDisplay.setText(min + ":" + sec + "0");
-                    }
-                } else {
-                    RegulateTimeDisplay.setText("0" + min + ":" + sec);
-                }
+                String minutes=String.format("%02d",min); //%02d einai akriveia 2 dekadikvn psifion dgladh to 1 to kanei 01
+                String seconds=String.format(":%02d", sec);//to xrhsimopoiw gia thn wra
+                String finalTime=minutes+seconds;
+                RegulateTimeDisplay.setText(finalTime);
+
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar RegulateTimeBar) {
-                // Toast.makeText(getApplicationContext(), "Started tracking seekbar", Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar ReguTimeBar) {
-                //  Toast.makeText(getApplicationContext(), "Stopped tracking seekbar" +timi, Toast.LENGTH_SHORT).show();
-                //to bug ap kato
+
             }
 
         });
