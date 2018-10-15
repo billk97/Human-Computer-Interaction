@@ -19,7 +19,8 @@
         <activity android:name=".Grill_Activity" />
         <activity android:name=".MicroPrograms" />
         <activity android:name=".SpaghettiProgram" />
-        <activity android:name=".MicrowaveIsOn"></activity>
+        <activity android:name=".MicrowaveIsOn" />
+        <activity android:name=".regulate_cook"></activity>
     </application>
 
 </manifest>
