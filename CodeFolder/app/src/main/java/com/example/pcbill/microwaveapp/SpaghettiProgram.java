@@ -1,6 +1,7 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,39 @@ public class SpaghettiProgram extends AppCompatActivity {
                 startActivityForResult(myIntent, 0);
             }
         });
+
+        FirstChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makeButtonDefalult();
+                FirstChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
+                FirstChoiceSpaButton.setTextColor(Color.WHITE);
+            }
+        });
+        SecondChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makeButtonDefalult();
+                SecondChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
+                SecondChoiceSpaButton.setTextColor(Color.WHITE);
+            }
+        });
+        ThirdChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makeButtonDefalult();
+                ThirdChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
+                ThirdChoiceSpaButton.setTextColor(Color.WHITE);
+            }
+        });
+        FourthChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makeButtonDefalult();
+                FourthChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
+                FourthChoiceSpaButton.setTextColor(Color.WHITE);
+            }
+        });
     }
 
 
@@ -57,5 +91,16 @@ public class SpaghettiProgram extends AppCompatActivity {
         info=(TextView) findViewById(R.id.informationSpaghetti);
 
 
+    }
+
+    private void makeButtonDefalult(){
+        FirstChoiceSpaButton.setBackgroundResource(android.R.drawable.btn_default);
+        FirstChoiceSpaButton.setTextColor(Color.BLACK);
+        SecondChoiceSpaButton.setBackgroundResource(android.R.drawable.btn_default);
+        SecondChoiceSpaButton.setTextColor(Color.BLACK);
+        ThirdChoiceSpaButton.setBackgroundResource(android.R.drawable.btn_default);
+        ThirdChoiceSpaButton.setTextColor(Color.BLACK);
+        FourthChoiceSpaButton.setBackgroundResource(android.R.drawable.btn_default);
+        FourthChoiceSpaButton.setTextColor(Color.BLACK);
     }
 }

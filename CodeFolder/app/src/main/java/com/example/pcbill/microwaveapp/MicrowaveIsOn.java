@@ -29,7 +29,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_microwave_is_on);
         initializeVriable();
-         mTimeLeftInMillis =10000*2*getIntent().getIntExtra(Intent.EXTRA_TEXT, 0); // pairnw th timh p esteila kai kanw tis prakseis
+         mTimeLeftInMillis =10000*2*getIntent().getIntExtra(Intent.EXTRA_TEXT, 1); // pairnw th timh p esteila kai kanw tis prakseis
                                                                                              //gia na ginei milisecond.
         ring= MediaPlayer.create(MicrowaveIsOn.this,R.raw.ring);
 
