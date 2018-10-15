@@ -58,14 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
         buttonRythmisiPsisimatos=(Button) findViewById(R.id.RythmisiPsisimatosButton);
 
-      /*  buttonRythmisiPsisimatos.setOnClickListener(new View.OnClickListener() {
+       buttonRythmisiPsisimatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ****.class);
+                Intent myIntent = new Intent(v.getContext(), regulate_cook.class);
                 startActivityForResult(myIntent, 0);
             }
         });
-        */ //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi rithmisi psisimatos
+        //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi rithmisi psisimatos
 
 
         buttonGrill=(Button) findViewById(R.id.GrillButton);
