@@ -82,7 +82,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
                    ring.start();
                    PauseButton.setText("ΕΝΑΡΞΗ");
 
-                   finish();
+                   finish();//this closes the activity
 
             }
         }.start();

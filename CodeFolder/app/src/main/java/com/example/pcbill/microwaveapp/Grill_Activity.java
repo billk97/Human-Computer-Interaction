@@ -51,7 +51,7 @@ public class Grill_Activity extends AppCompatActivity {
                 String minutes=String.format("%02d",min); //%02d einai akriveia 2 dekadikvn psifion dgladh to 1 to kanei 01
                 String seconds=String.format(":%02d", sec);//to xrhsimopoiw gia thn wra
                 String finalTime=minutes+seconds;
-                GrillTimeDisplay.setText(finalTime);
+                GrillTimeDisplay.setText(Integer.toString(timi));
 
 
 

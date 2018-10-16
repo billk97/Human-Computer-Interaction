@@ -49,32 +49,29 @@ public class SpaghettiProgram extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 makeButtonDefalult();
-                FirstChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
-                FirstChoiceSpaButton.setTextColor(Color.WHITE);
+                blackButton(FirstChoiceSpaButton);
+
             }
         });
         SecondChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeButtonDefalult();
-                SecondChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
-                SecondChoiceSpaButton.setTextColor(Color.WHITE);
+                blackButton(SecondChoiceSpaButton);
             }
         });
         ThirdChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeButtonDefalult();
-                ThirdChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
-                ThirdChoiceSpaButton.setTextColor(Color.WHITE);
+                blackButton(ThirdChoiceSpaButton);
             }
         });
         FourthChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeButtonDefalult();
-                FourthChoiceSpaButton.setBackgroundColor(Color.BLACK) ;
-                FourthChoiceSpaButton.setTextColor(Color.WHITE);
+                blackButton(FourthChoiceSpaButton);
             }
         });
     }
@@ -102,5 +99,11 @@ public class SpaghettiProgram extends AppCompatActivity {
         ThirdChoiceSpaButton.setTextColor(Color.BLACK);
         FourthChoiceSpaButton.setBackgroundResource(android.R.drawable.btn_default);
         FourthChoiceSpaButton.setTextColor(Color.BLACK);
+    }
+    private  void blackButton(Button button)
+    {
+        button.setBackgroundColor(Color.BLACK) ;
+        button.setTextColor(Color.WHITE);
+
     }
 }
