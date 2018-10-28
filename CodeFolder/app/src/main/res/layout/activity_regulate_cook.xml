@@ -129,7 +129,7 @@
         android:text="ΠΙΣΩ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.984" />
@@ -142,6 +142,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="ΑΡΧΙΚΗ>ΡΥΘΜΙΣΗ ΨΗΣΙΜΑΤΟΣ"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
