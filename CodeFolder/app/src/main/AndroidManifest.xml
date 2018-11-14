@@ -20,7 +20,9 @@
         <activity android:name=".MicroPrograms" />
         <activity android:name=".SpaghettiProgram" />
         <activity android:name=".MicrowaveIsOn" />
-        <activity android:name=".regulate_cook"></activity>
+        <activity android:name=".regulate_cook" />
+        <activity android:name=".activity_apopsiji" />
+        <activity android:name=".FastCook"></activity>
     </application>
 
 </manifest>

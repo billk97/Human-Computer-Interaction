@@ -81,25 +81,25 @@ public class MainActivity extends AppCompatActivity {
 
         buttonApopsiksi=(Button) findViewById(R.id.ApopsiksiButton);
 
-      /*  buttonApopsiksi.setOnClickListener(new View.OnClickListener() {
+       buttonApopsiksi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ****.class);
+                Intent myIntent = new Intent(v.getContext(), activity_apopsiji.class);
                 startActivityForResult(myIntent, 0);
             }
         });
-        */ //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi Apopsiksi
+        //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi Apopsiksi
 
         buttonGrigoriThermansi=(Button) findViewById(R.id.GrigoriThermansiButton);
 
-      /*  buttonGrigoriThermansi.setOnClickListener(new View.OnClickListener() {
+        buttonGrigoriThermansi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ****.class);
+                Intent myIntent = new Intent(v.getContext(), FastCook.class);
                 startActivityForResult(myIntent, 0);
             }
         });
-        */ //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi grhgorh thermansi
+         //edw perimenei na tou grapsoume se poia diepafh tha paei meta to koympi grhgorh thermansi
 
         buttonEtoimaProgrammata=(Button) findViewById(R.id.EtoimaProgrammataButton);
 

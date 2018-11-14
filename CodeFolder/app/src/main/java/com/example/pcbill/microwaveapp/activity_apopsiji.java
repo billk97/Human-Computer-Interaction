@@ -39,7 +39,7 @@ public class activity_apopsiji extends AppCompatActivity {
               min=timi*20/60;
               sec=timi*20%60;
               String minutes=String.format("%02d",min);
-              String seconds=String.format(":20d",sec);
+              String seconds=String.format(":%02d",sec);
               String finalTime=minutes+seconds;
               ApopsijiTimeDisplay.setText(finalTime);
             }
