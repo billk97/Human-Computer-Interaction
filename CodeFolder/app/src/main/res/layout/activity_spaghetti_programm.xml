@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpaghettiProgram">
+    tools:context=".SpaghettiProgram"
+    android:src="@drawable/bgma"
+    android:scaleType = "centerCrop"
+    android:background="@drawable/bgma"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
         android:id="@+id/informationSpaghetti"
