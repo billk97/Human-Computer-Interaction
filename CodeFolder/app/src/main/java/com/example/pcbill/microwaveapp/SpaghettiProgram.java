@@ -93,7 +93,7 @@ public class SpaghettiProgram extends AppCompatActivity {
         FourthChoiceSpaButton=(Button) findViewById(R.id.buttonFourthChoiceSpa);
         StartSpaButton=(Button) findViewById(R.id.buttonStartSpa);
         info=(TextView) findViewById(R.id.informationSpaghetti);
-       
+
 
 
     }

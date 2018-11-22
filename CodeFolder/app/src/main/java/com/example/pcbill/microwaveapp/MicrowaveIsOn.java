@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
+import android.support.annotation.DrawableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -22,6 +24,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
     boolean mTimerRunning;
     long mTimeLeftInMillis;
     MediaPlayer ring;
+    ImageView Image;
 
 
 
@@ -41,12 +44,14 @@ public class MicrowaveIsOn extends AppCompatActivity {
         PauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(mTimerRunning) {
                     pauseTimer();
+                    Image.setImageResource(R.drawable.off);
                 }
                 else{
                     startTimer();
-
+                    Image.setImageResource(R.drawable.on);
                 }
             }
         });
@@ -58,10 +63,6 @@ public class MicrowaveIsOn extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
-
     }
 
     private void initializeVriable()
@@ -69,6 +70,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
       BackButton=(Button)findViewById(R.id.butBack);
       Clock=(TextView)findViewById(R.id.ClocktextView);
       Info=(TextView)findViewById(R.id.infoTextView);
+      Image=(ImageView)findViewById(R.id.ImageId);
       }
 
       private void startTimer(){ // apo edw kai katw ksekinaei h diadikasia gia na ftiaksw to xronometro.oles oi monades einais e milisecond
