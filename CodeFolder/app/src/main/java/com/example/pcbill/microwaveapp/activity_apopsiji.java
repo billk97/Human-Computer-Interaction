@@ -1,12 +1,14 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class activity_apopsiji extends AppCompatActivity {
 
@@ -25,10 +27,10 @@ public class activity_apopsiji extends AppCompatActivity {
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), MainActivity.class);
-                startActivityForResult(myIntent, 0);
+                finish();
             }
         });
+        ApopsijiTimeDisplay.setTextColor(Color.WHITE);
         ApopsijiTimeDisplay.setText("00:00");
         seekBartime.setMax(30);
         seekBartime.setProgress(0);
@@ -57,9 +59,18 @@ public class activity_apopsiji extends AppCompatActivity {
         StartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(),MicrowaveIsOn.class);
-                myIntent.putExtra(Intent.EXTRA_TEXT,timi);
-                startActivityForResult(myIntent,0);
+                if (timi>0)
+                {
+                    Intent myIntent = new Intent(view.getContext(),MicrowaveIsOn.class);
+                    myIntent.putExtra(Intent.EXTRA_TEXT,timi);
+                    startActivityForResult(myIntent,0);
+
+                }
+                else
+                    {
+                        Toast.makeText(getApplicationContext(),"NO time chosen", Toast.LENGTH_SHORT).show();
+                    }
+
             }
         });
     }

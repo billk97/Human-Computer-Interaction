@@ -1,6 +1,7 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,13 +28,14 @@ public class Grill_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grill_);
         initializeVriable();
+        GrillTempDisplay.setTextColor(Color.WHITE);
+        GrillTimeDisplay.setTextColor(Color.WHITE);
 
         /*backButton function*/
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), MainActivity.class);
-                startActivityForResult(myIntent, 0);
+                finish();
             }
         });
         /*displaing 00:00*/
@@ -66,9 +68,9 @@ public class Grill_Activity extends AppCompatActivity {
             }
         });
         /**controling the data for the temperature  **/
-        GrillTempDisplay.setText("0");//initializing samething for the begining
+        GrillTempDisplay.setText("200");//initializing samething for the begining
         seekBarTemp.setMax(10);//setting max temp
-        seekBarTemp.setProgress(0);//setting min temp
+        seekBarTemp.setProgress(2);//setting min temp
         /**the most important part
          * initializing temp and printing on textView the result of the action on the bar**/
         seekBarTemp.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
@@ -94,9 +96,18 @@ public class Grill_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
-                myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
-                startActivityForResult(myIntent, 0);
+                if(timi>0)
+                {
+                    Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                    myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
+                    startActivityForResult(myIntent, 0);
+                }
+                else
+                    {
+                        Toast.makeText(getApplicationContext(),"NO time chosen", Toast.LENGTH_SHORT).show();
+                    }
+
+
             }
         });
     }

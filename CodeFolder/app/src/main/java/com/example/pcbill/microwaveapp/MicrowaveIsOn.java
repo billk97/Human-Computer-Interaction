@@ -1,6 +1,7 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,8 @@ public class MicrowaveIsOn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_microwave_is_on);
         initializeVriable();
+        Clock.setTextColor(Color.WHITE);
+        Info.setTextColor(Color.WHITE);
          mTimeLeftInMillis =10000*2*getIntent().getIntExtra(Intent.EXTRA_TEXT, 1); // pairnw th timh p esteila kai kanw tis prakseis
                                                                                              //gia na ginei milisecond.
         ring= MediaPlayer.create(MicrowaveIsOn.this,R.raw.ring);
@@ -51,6 +54,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
         BackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                pauseTimer();
                 finish();
             }
         });

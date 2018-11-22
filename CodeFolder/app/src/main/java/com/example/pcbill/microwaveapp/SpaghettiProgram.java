@@ -17,6 +17,7 @@ public class SpaghettiProgram extends AppCompatActivity {
     Button FourthChoiceSpaButton;
     Button StartSpaButton;
     TextView info;
+    int timi;
 
 
     @Override
@@ -24,6 +25,7 @@ public class SpaghettiProgram extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spaghetti_programm);
         initializeVriable();
+        info.setTextColor(Color.WHITE);
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Intent.EXTRA_TEXT);
@@ -32,8 +34,7 @@ public class SpaghettiProgram extends AppCompatActivity {
         BackSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), MicroPrograms.class);
-                startActivityForResult(myIntent, 0);
+                finish();
             }
         });
 
@@ -41,6 +42,7 @@ public class SpaghettiProgram extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(), MicrowaveIsOn.class);
+                myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
                 startActivityForResult(myIntent, 0);
             }
         });
@@ -50,6 +52,7 @@ public class SpaghettiProgram extends AppCompatActivity {
             public void onClick(View v) {
                 makeButtonDefalult();
                 blackButton(FirstChoiceSpaButton);
+                timi=2;
 
             }
         });
@@ -58,6 +61,8 @@ public class SpaghettiProgram extends AppCompatActivity {
             public void onClick(View v) {
                 makeButtonDefalult();
                 blackButton(SecondChoiceSpaButton);
+                timi=4;
+
             }
         });
         ThirdChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +70,7 @@ public class SpaghettiProgram extends AppCompatActivity {
             public void onClick(View v) {
                 makeButtonDefalult();
                 blackButton(ThirdChoiceSpaButton);
+                timi=6;
             }
         });
         FourthChoiceSpaButton.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +78,7 @@ public class SpaghettiProgram extends AppCompatActivity {
             public void onClick(View v) {
                 makeButtonDefalult();
                 blackButton(FourthChoiceSpaButton);
+                timi=8;
             }
         });
     }
@@ -86,6 +93,7 @@ public class SpaghettiProgram extends AppCompatActivity {
         FourthChoiceSpaButton=(Button) findViewById(R.id.buttonFourthChoiceSpa);
         StartSpaButton=(Button) findViewById(R.id.buttonStartSpa);
         info=(TextView) findViewById(R.id.informationSpaghetti);
+       
 
 
     }

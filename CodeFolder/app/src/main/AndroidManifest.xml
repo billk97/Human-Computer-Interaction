@@ -9,20 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Grill_Activity" />
-        <activity android:name=".MicroPrograms" />
-        <activity android:name=".SpaghettiProgram" />
-        <activity android:name=".MicrowaveIsOn" />
-        <activity android:name=".regulate_cook" />
-        <activity android:name=".activity_apopsiji" />
-        <activity android:name=".FastCook"></activity>
+        <activity android:name=".Grill_Activity"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".MicroPrograms"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SpaghettiProgram"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MicrowaveIsOn"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".regulate_cook"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity_apopsiji"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FastCook"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

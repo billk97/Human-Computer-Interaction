@@ -1,12 +1,14 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FastCook extends AppCompatActivity {
 
@@ -23,19 +25,29 @@ public class FastCook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fast_cook);
         initializerVariable();
+        FastCookTimeDisplay.setTextColor(Color.WHITE);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(),MainActivity.class);
-                startActivityForResult(myIntent,0);
+                finish();
             }
         });
         StartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(),MicrowaveIsOn.class);
-                myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
-                startActivityForResult(myIntent,0);
+                if(timi>0)
+                {
+                    Intent myIntent = new Intent(view.getContext(),MicrowaveIsOn.class);
+                    myIntent.putExtra(Intent.EXTRA_TEXT, timi); // edw stelnw th timh pou lamvanw apo th mpara gia thw wra;
+                    startActivityForResult(myIntent,0);
+                }
+                else
+                    {
+                        Toast.makeText(getApplicationContext(),"NO time chosen", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
             }
         });
         FastCookTimeDisplay.setText("00:00");
