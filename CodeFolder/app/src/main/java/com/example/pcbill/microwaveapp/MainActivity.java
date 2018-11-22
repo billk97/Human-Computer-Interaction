@@ -1,6 +1,7 @@
 package com.example.pcbill.microwaveapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                                 long date = System.currentTimeMillis();
                                 SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
                                 String dateString = sdf.format(date);
+                                timeText.setTextColor(Color.WHITE); //this is green color
                                 timeText.setText(dateString);
                             }
                         });
