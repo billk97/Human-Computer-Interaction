@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Grill_Activity">
+    tools:context=".Grill_Activity"
+    android:src="@drawable/bgma"
+    android:scaleType = "centerCrop"
+    android:background="@drawable/bgma"
+    tools:layout_editor_absoluteY="25dp">
 
     <Button
         android:id="@+id/GrillButtonStart"
