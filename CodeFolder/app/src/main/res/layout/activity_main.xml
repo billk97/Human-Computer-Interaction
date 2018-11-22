@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:src="@drawable/bgm"
+    android:src="@drawable/bgma"
     android:scaleType = "centerCrop"
-    android:background="@drawable/bgm"
+    android:background="@drawable/bgma"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -20,6 +20,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Γρήγορη Θέρμανση"
+        android:textColor="@android:color/background_light"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +38,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Απόψυξη"
+        android:textColor="@android:color/background_light"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,6 +174,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Grill"
+        android:textColor="@android:color/background_light"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
