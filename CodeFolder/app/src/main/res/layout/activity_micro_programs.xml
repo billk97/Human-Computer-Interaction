@@ -16,7 +16,7 @@
         android:layout_height="76dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="36dp"
-        android:text="ΡΥΖΙ"
+        android:background="@drawable/vegs"
         app:layout_constraintBottom_toTopOf="@+id/buttonVegetables"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -26,7 +26,7 @@
         android:layout_height="76dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="36dp"
-        android:text="ΛΑΧΑΝΙΚΑ"
+        android:background="@drawable/rice"
         app:layout_constraintBottom_toTopOf="@+id/buttonMeat"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,7 +36,7 @@
         android:layout_height="76dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="32dp"
-        android:text="ΚΡΕΑΣ"
+        android:background="@drawable/meat"
         app:layout_constraintBottom_toTopOf="@+id/MicroProgramsBackButton"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -63,7 +63,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="84dp"
-        android:text="ΥΓΡΑ"
+        android:background="@drawable/cup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -76,7 +76,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="36dp"
-        android:text="ΠΑΤΑΤΕΣ"
+        android:background="@drawable/potato"
         app:layout_constraintBottom_toTopOf="@+id/buttonLiquid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -89,7 +89,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="36dp"
-        android:text="ΚΟΤΟΠΟΥΛΟ"
+        android:background="@drawable/chicken"
         app:layout_constraintBottom_toTopOf="@+id/buttonPotatoe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -102,7 +102,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="36dp"
-        android:text="ΨΑΡΙ"
+        android:background="@drawable/fish"
         app:layout_constraintBottom_toTopOf="@+id/buttonChicken"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -115,7 +115,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="36dp"
-        android:text="Ζυμαρικά"
+        android:background="@drawable/pasta"
         app:layout_constraintBottom_toTopOf="@+id/buttonRise"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -130,6 +130,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="15dp"
         android:text="ΑΡΧΙΚΗ>ΕΤΟΙΜΑ ΠΡΟΓΡΑΜΜΑΤΑ"
+        android:textColor="@android:color/white"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,4 +138,96 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/PastaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="ΜΑΚΑΡΟΝΙΑ"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpagheti" />
+
+    <TextView
+        android:id="@+id/FishText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="92dp"
+        android:text="ΨΑΡΙ"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/PastaText"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFish" />
+
+    <TextView
+        android:id="@+id/VegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="ΛΑΧΑΝΙΚΑ"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRise" />
+
+    <TextView
+        android:id="@+id/ChickenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        android:text="ΚΟΤΟΠΟΥΛΟ"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/RiceText"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChicken" />
+
+    <TextView
+        android:id="@+id/RiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="ΡΥΖΙ"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVegetables" />
+
+    <TextView
+        android:id="@+id/PotatoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="ΠΑΤΑΤΕΣ"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toEndOf="@+id/RiceText"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPotatoe" />
+
+    <TextView
+        android:id="@+id/MeatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="ΚΡΕΑΣ"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMeat" />
+
+    <TextView
+        android:id="@+id/LiqText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ΥΓΡΑ"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toEndOf="@+id/MeatText"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLiquid" />
 </android.support.constraint.ConstraintLayout>
