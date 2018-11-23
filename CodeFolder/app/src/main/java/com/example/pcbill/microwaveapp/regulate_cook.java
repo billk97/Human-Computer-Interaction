@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class regulate_cook extends AppCompatActivity {
 
     private Button RegulateStartButton;
+    private Button RegulateMainButton;
     private Button RegulateBackButton;
     private TextView RegulateTimeDisplay;
     private TextView RegulateTempDisplay;
@@ -112,6 +113,12 @@ public class regulate_cook extends AppCompatActivity {
 
             }
         });
+        RegulateMainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 
     }
@@ -119,6 +126,7 @@ public class regulate_cook extends AppCompatActivity {
     private void initializeVriable()
     {
         RegulateStartButton=(Button) findViewById(R.id.RegulateCookStartButton);
+        RegulateMainButton=(Button) findViewById(R.id.regulatMainButton);
         RegulateBackButton = (Button) findViewById(R.id.RegulateCookBackButton);
         RegulateTimeDisplay=(TextView) findViewById(R.id.RegulateCookTimeDisplay);
         RegulateTempDisplay=(TextView)findViewById(R.id.RegulateCookTempDisplay);

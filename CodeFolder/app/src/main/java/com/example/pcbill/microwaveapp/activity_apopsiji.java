@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class activity_apopsiji extends AppCompatActivity {
 
     private  Button buttonBack;
+    private  Button buttonGoesToMain;
     private SeekBar seekBartime;
     private TextView ApopsijiTimeDisplay;
     private Button StartButton;
@@ -73,11 +74,19 @@ public class activity_apopsiji extends AppCompatActivity {
 
             }
         });
+
+        buttonGoesToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                }
+        });
     }
 
     private void initializeVariable()
     {
         buttonBack=(Button) findViewById(R.id.apopsijiBackButton2);
+        buttonGoesToMain=(Button)findViewById(R.id.apopsijilinformationMain);
         StartButton=(Button) findViewById(R.id.apopsijiStart);
         seekBartime=(SeekBar) findViewById(R.id.apopsijiTimeBar);
         ApopsijiTimeDisplay=(TextView)findViewById(R.id.apopsijiTimeDisplay);

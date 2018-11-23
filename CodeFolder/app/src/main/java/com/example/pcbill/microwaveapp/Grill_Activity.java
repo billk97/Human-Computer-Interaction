@@ -14,6 +14,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 public class Grill_Activity extends AppCompatActivity {
 
     private  Button buttonBack;
+    private  Button buttonToMain;
     private SeekBar seekBartime;
     private TextView GrillTimeDisplay;
     private TextView GrillTempDisplay;
@@ -110,11 +111,18 @@ public class Grill_Activity extends AppCompatActivity {
 
             }
         });
+        buttonToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
     /**initializing the interface**/
     private void initializeVriable()
     {
         buttonBack=(Button) findViewById(R.id.GrillBackButton);
+        buttonToMain=(Button) findViewById(R.id.grillButtonMain);
         seekBartime = (SeekBar) findViewById(R.id.GrillTimeBar);
         GrillTimeDisplay=(TextView) findViewById(R.id.GrillTimeDisplay);
         GrillTempDisplay=(TextView)findViewById(R.id.GrillTempDisplay);

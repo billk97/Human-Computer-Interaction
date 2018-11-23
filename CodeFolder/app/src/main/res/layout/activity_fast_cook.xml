@@ -66,22 +66,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FastCooklinformation" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToMain" />
 
-    <TextView
-        android:id="@+id/FastCooklinformation"
+    <Button
+        android:id="@+id/buttonToMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="ΑΡΧΙΚΗ>GRILL"
-        android:textColor="@android:color/background_light"
+        android:layout_marginEnd="8dp"
+        android:text="ΑΡΧΙΚΗ"
+        android:textColor="@android:color/background_dark"
         android:textSize="17dp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fastCooklinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="ΓΡΗΓΟΡΗ ΘΕΡΜΑΝΣΗ"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonToMain"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

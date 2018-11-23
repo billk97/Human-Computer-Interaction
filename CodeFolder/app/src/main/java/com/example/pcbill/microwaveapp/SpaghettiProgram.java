@@ -11,6 +11,8 @@ import android.widget.TextView;
 public class SpaghettiProgram extends AppCompatActivity {
 
     Button BackSpaButton;
+    Button MainSpaButton;
+    Button ProgramSpaButton;
     Button FirstChoiceSpaButton;
     Button SecondChoiceSpaButton;
     Button ThirdChoiceSpaButton;
@@ -29,7 +31,8 @@ public class SpaghettiProgram extends AppCompatActivity {
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Intent.EXTRA_TEXT);
-        info.setText("ΑΡΧΙΚΗ>ΕΤΟΙΜΑ ΠΡΟΓΡΑΜΜΑΤΑ>"+text);
+        info.setTextColor(Color.BLACK);
+        info.setText(text);
 
         BackSpaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,12 +84,28 @@ public class SpaghettiProgram extends AppCompatActivity {
                 timi=8;
             }
         });
+        MainSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent myIntent = new Intent(view.getContext(),MainActivity.class);
+                startActivityForResult(myIntent,0);
+            }
+        });
+        ProgramSpaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
 
     private void initializeVriable()
     {
         BackSpaButton=(Button) findViewById(R.id.SpaBackButton);
+        MainSpaButton=(Button) findViewById(R.id.spahgetiMainButton);
+        ProgramSpaButton=(Button) findViewById(R.id.spaghetiProgramButton);
         FirstChoiceSpaButton=(Button) findViewById(R.id.buttonFirstChoiceSpa);
         SecondChoiceSpaButton=(Button) findViewById(R.id.buttonSecondChoiceSpa);
         ThirdChoiceSpaButton=(Button) findViewById(R.id.buttonThirdChoiceSpa);

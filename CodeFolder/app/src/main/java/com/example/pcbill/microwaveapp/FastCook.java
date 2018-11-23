@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class FastCook extends AppCompatActivity {
 
     private Button buttonBack;
+    private Button buttonToMain;
     private SeekBar seekBartime;
     private TextView FastCookTimeDisplay;
     private Button StartButton;
@@ -75,11 +76,18 @@ public class FastCook extends AppCompatActivity {
 
             }
         });
+        buttonToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 
     }
     private void  initializerVariable()
     {
+        buttonToMain=(Button) findViewById(R.id.buttonToMain);
         buttonBack=(Button)findViewById(R.id.FatCookBack);
         StartButton=(Button)findViewById(R.id.FatCookStart);
         seekBartime=(SeekBar) findViewById(R.id.FastCookSeekBar);

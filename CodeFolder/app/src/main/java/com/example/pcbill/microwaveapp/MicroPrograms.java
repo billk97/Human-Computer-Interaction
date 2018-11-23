@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MicroPrograms extends AppCompatActivity {
 
     Button SpaghettiButton;
+    Button mainButton;
     Button FishButton;
     Button RiseButton;
     Button ChickenButton;
@@ -113,12 +114,19 @@ public class MicroPrograms extends AppCompatActivity {
             }
         });
 
+        mainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
     private void initializeVriable()
     {
         BackButton=(Button) findViewById(R.id.MicroProgramsBackButton);
+        mainButton=(Button) findViewById(R.id.microMainButton);
         SpaghettiButton=(Button) findViewById(R.id.buttonSpagheti);
         FishButton=(Button) findViewById(R.id.buttonFish);
         RiseButton=(Button) findViewById(R.id.buttonRise);
