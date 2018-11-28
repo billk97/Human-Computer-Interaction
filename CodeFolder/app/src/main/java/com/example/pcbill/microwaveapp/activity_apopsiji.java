@@ -44,6 +44,7 @@ public class activity_apopsiji extends AppCompatActivity {
               String minutes=String.format("%02d",min);
               String seconds=String.format(":%02d",sec);
               String finalTime=minutes+seconds;
+              ApopsijiTimeDisplay.setTextSize(120);
               ApopsijiTimeDisplay.setText(finalTime);
             }
 

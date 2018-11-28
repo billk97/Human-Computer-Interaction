@@ -33,6 +33,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_microwave_is_on);
         initializeVriable();
+        Clock.setTextSize(120);
         Clock.setTextColor(Color.WHITE);
         Info.setTextColor(Color.WHITE);
          mTimeLeftInMillis =10000*2*getIntent().getIntExtra(Intent.EXTRA_TEXT, 1); // pairnw th timh p esteila kai kanw tis prakseis
@@ -111,6 +112,7 @@ public class MicrowaveIsOn extends AppCompatActivity {
         String timeLeftFormattedMinutes=String.format("%02d",minutes);
         String timeLeftFormattedSeconds=String.format(":%02d", seconds);
         String timeLeftFormatted=timeLeftFormattedMinutes+timeLeftFormattedSeconds;
+        Clock.setTextSize(120);
         Clock.setText(timeLeftFormatted);
 
     }

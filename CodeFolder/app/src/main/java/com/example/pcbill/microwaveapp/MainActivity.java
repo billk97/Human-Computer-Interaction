@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                                 SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
                                 String dateString = sdf.format(date);
                                 timeText.setTextColor(Color.WHITE); //this is green color
+                                timeText.setTextSize(120);
                                 timeText.setText(dateString);
                             }
                         });

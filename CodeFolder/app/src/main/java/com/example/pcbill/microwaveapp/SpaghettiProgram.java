@@ -31,6 +31,7 @@ public class SpaghettiProgram extends AppCompatActivity {
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Intent.EXTRA_TEXT);
+        info.setTextSize(30);
         info.setTextColor(Color.BLACK);
         info.setText(text);
 

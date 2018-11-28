@@ -63,6 +63,7 @@ public class FastCook extends AppCompatActivity {
                 String minutes=String.format("%02d",min);
                 String seconds=String.format(":%02d", sec);//to xrhsimopoiw gia thn wra
                 String finalTime=minutes+seconds;
+                FastCookTimeDisplay.setTextSize(120);
                 FastCookTimeDisplay.setText(finalTime);
             }
 

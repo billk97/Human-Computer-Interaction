@@ -58,6 +58,7 @@ public class regulate_cook extends AppCompatActivity {
         });
 
         /*display time*/
+        RegulateTimeDisplay.setTextSize(120);
         RegulateTimeDisplay.setText("00:00");
         /*to control the seek bar*/
         RegulateTimeBar.setMax(30);
@@ -90,6 +91,7 @@ public class regulate_cook extends AppCompatActivity {
         });
 
         /**controling the data for the temperature  **/
+        RegulateTempDisplay.setTextSize(120);
         RegulateTempDisplay.setText("200");//initializing samething for the begining
         RegulateTempBar.setMax(10);//setting max temp
         RegulateTempBar.setProgress(2);//setting min temp
