@@ -89,19 +89,16 @@
         android:id="@+id/RythmisiPsisimatosButton"
         android:layout_width="609dp"
         android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="#FFC7B3"
         android:text="ΡΥΘΜΙΣΗ ΨΗΣΙΜΑΤΟΣ"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeText"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
 
     <Button
         android:id="@+id/GrillButton"
