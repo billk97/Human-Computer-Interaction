@@ -14,15 +14,14 @@
         android:id="@+id/apopsijiStart"
         android:layout_width="183dp"
         android:layout_height="85dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="183dp"
         android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Εναρξη"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/apopsijiTimeBar"
         app:layout_constraintVertical_bias="0.185" />
@@ -74,12 +73,11 @@
         android:layout_width="183dp"
         android:layout_height="85dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="416dp"
         android:text="ΑΠΟΨΥΞΗ"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/apopsijilinformationMain"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -87,20 +85,14 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="183dp"
         android:layout_height="85dp"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="ΑΡΧΙΚΗ"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/apopsijiTimeText"
-        app:layout_constraintEnd_toStartOf="@+id/apopsijilinformation"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/apopsijiTimeDisplay"

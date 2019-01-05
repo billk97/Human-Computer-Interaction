@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class FastCook extends AppCompatActivity {
 
+
     private Button buttonBack;
     private Button buttonToMain;
     private SeekBar seekBartime;
@@ -20,6 +21,8 @@ public class FastCook extends AppCompatActivity {
     int timi=0;
     int min=0;
     int sec=0;
+    //comment
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
