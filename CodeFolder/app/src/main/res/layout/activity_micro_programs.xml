@@ -12,8 +12,8 @@
 
     <Button
         android:id="@+id/buttonRise"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="136dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/vegs"
@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/buttonVegetables"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="132dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/rice"
@@ -32,8 +32,8 @@
 
     <Button
         android:id="@+id/buttonMeat"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="136dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/meat"
@@ -59,8 +59,8 @@
 
     <Button
         android:id="@+id/buttonLiquid"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="140dp"
@@ -72,8 +72,8 @@
 
     <Button
         android:id="@+id/buttonPotatoe"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="56dp"
@@ -85,8 +85,8 @@
 
     <Button
         android:id="@+id/buttonChicken"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="60dp"
@@ -98,21 +98,24 @@
 
     <Button
         android:id="@+id/buttonFish"
-        android:layout_width="165dp"
-        android:layout_height="163dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginBottom="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/fish"
         app:layout_constraintBottom_toTopOf="@+id/buttonChicken"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toEndOf="@+id/buttonSpagheti" />
+        app:layout_constraintStart_toEndOf="@+id/buttonSpagheti"
+        app:layout_constraintTop_toBottomOf="@+id/microMainButton"
+        app:layout_constraintVertical_bias="0.884" />
 
     <Button
         android:id="@+id/buttonSpagheti"
-        android:layout_width="165dp"
-        android:layout_height="165dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="136dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="36dp"
@@ -126,17 +129,17 @@
         android:id="@+id/informationPrograms"
         android:layout_width="250dp"
         android:layout_height="85dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="344dp"
-        android:layout_marginBottom="8dp"
         android:text="ΠΡΟΓΡΑΜΜΑΤΑ"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/microMainButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/microMainButton"
@@ -144,18 +147,12 @@
         android:layout_height="85dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="ΑΡΧΙΚΗ"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/informationPrograms"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/PastaText"
@@ -164,8 +161,8 @@
         android:layout_marginStart="112dp"
         android:text="ΜΑΚΑΡΟΝΙΑ"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSpagheti" />
 
@@ -177,8 +174,8 @@
         android:layout_marginEnd="92dp"
         android:text="ΨΑΡΙ"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toEndOf="@+id/PastaText"
@@ -190,8 +187,8 @@
         android:layout_height="85dp"
         android:layout_marginStart="136dp"
         android:text="ΛΑΧΑΝΙΚΑ"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRise" />
 
@@ -202,8 +199,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="64dp"
         android:text="ΚΟΤΟΠΟΥΛΟ"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.632"
         app:layout_constraintStart_toEndOf="@+id/RiceText"
@@ -216,8 +213,8 @@
         android:layout_marginStart="112dp"
         android:text="ΡΥΖΙ"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonVegetables" />
 
@@ -229,8 +226,8 @@
         android:layout_marginEnd="76dp"
         android:text="ΠΑΤΑΤΕΣ"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toEndOf="@+id/RiceText"
@@ -242,8 +239,8 @@
         android:layout_height="80dp"
         android:layout_marginStart="160dp"
         android:text="ΚΡΕΑΣ"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMeat" />
 
@@ -256,8 +253,8 @@
         android:layout_marginEnd="8dp"
         android:text="ΥΓΡΑ"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toEndOf="@+id/MeatText"

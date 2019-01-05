@@ -31,7 +31,7 @@ public class activity_apopsiji extends AppCompatActivity {
                 finish();
             }
         });
-        ApopsijiTimeDisplay.setTextColor(Color.WHITE);
+        ApopsijiTimeDisplay.setTextColor(Color.BLACK);
         ApopsijiTimeDisplay.setText("00:00");
         seekBartime.setMax(30);
         seekBartime.setProgress(0);
