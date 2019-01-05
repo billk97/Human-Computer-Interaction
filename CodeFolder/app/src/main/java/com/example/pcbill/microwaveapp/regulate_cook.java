@@ -30,8 +30,8 @@ public class regulate_cook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regulate_cook);
         initializeVriable();
-        RegulateTempDisplay.setTextColor(Color.WHITE);
-        RegulateTimeDisplay.setTextColor(Color.WHITE);
+        RegulateTempDisplay.setTextColor(Color.BLACK);
+        RegulateTimeDisplay.setTextColor(Color.BLACK);
 
         /*back button's fuction*/
         RegulateBackButton.setOnClickListener(new View.OnClickListener() {

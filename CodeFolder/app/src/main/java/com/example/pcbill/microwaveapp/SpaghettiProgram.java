@@ -27,7 +27,7 @@ public class SpaghettiProgram extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spaghetti_programm);
         initializeVriable();
-        info.setTextColor(Color.WHITE);
+        info.setTextColor(Color.BLACK);
 
         Intent intent = getIntent();
         String text = intent.getStringExtra(Intent.EXTRA_TEXT);

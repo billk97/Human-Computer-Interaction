@@ -29,8 +29,8 @@ public class Grill_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grill_);
         initializeVriable();
-        GrillTempDisplay.setTextColor(Color.WHITE);
-        GrillTimeDisplay.setTextColor(Color.WHITE);
+        GrillTempDisplay.setTextColor(Color.BLACK);
+        GrillTimeDisplay.setTextColor(Color.BLACK);
 
         /*backButton function*/
         buttonBack.setOnClickListener(new View.OnClickListener() {

@@ -26,7 +26,7 @@ public class FastCook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fast_cook);
         initializerVariable();
-        FastCookTimeDisplay.setTextColor(Color.WHITE);
+        FastCookTimeDisplay.setTextColor(Color.BLACK);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
