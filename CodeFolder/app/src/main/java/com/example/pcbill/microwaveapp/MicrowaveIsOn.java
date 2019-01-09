@@ -49,10 +49,12 @@ public class MicrowaveIsOn extends AppCompatActivity {
                 if(mTimerRunning) {
                     pauseTimer();
                     Image.setImageResource(R.drawable.off);
+                    Info.setText("ΣΕ ΑΝΑΜΟΝΉ");
                 }
                 else{
                     startTimer();
                     Image.setImageResource(R.drawable.on);
+                    Info.setText("ΣΕ ΛΕΙΤΟΥΡΓΊΑ");
                 }
             }
         });

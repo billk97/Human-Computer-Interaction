@@ -110,7 +110,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="Θερμοκρασία(Watt)"
+        android:text="Θερμοκρασία \n(Watt)"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/RegulateCookTempBar"

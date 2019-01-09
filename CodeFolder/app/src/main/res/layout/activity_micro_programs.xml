@@ -247,7 +247,7 @@
     <TextView
         android:id="@+id/LiqText"
         android:layout_width="229dp"
-        android:layout_height="wrap_content"
+        android:layout_height="85dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
